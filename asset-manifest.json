@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/sky-gal/static/css/main.0a18fbf4.css",
-    "main.js": "/sky-gal/static/js/main.7d85975a.js",
+    "main.js": "/sky-gal/static/js/main.b84f885b.js",
     "static/media/Sky_2.JPG": "/sky-gal/static/media/Sky_2.62f3b4a4ad7653c82667.JPG",
     "static/media/Sky_3.JPG": "/sky-gal/static/media/Sky_3.04aa8653e422e72b9e86.JPG",
     "static/media/Sky_1.jpg": "/sky-gal/static/media/Sky_1.83e845b1dae3675d2cfc.jpg",
     "index.html": "/sky-gal/index.html",
     "main.0a18fbf4.css.map": "/sky-gal/static/css/main.0a18fbf4.css.map",
-    "main.7d85975a.js.map": "/sky-gal/static/js/main.7d85975a.js.map"
+    "main.b84f885b.js.map": "/sky-gal/static/js/main.b84f885b.js.map"
   },
   "entrypoints": [
     "static/css/main.0a18fbf4.css",
-    "static/js/main.7d85975a.js"
+    "static/js/main.b84f885b.js"
   ]
 }
