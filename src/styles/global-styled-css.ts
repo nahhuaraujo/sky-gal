@@ -65,21 +65,6 @@ export const defaultLinkButtonStyle = css`
   }
 `;
 
-// export const defaultLinkButtonStyle = css`
-//   color: inherit;
-//   font-size: inherit;
-//   cursor: pointer;
-//   transition: 400ms;
-
-//   :hover {
-//     background-color: ${mainColorLight};
-//   }
-//   :active {
-//     background-color: inherit;
-//     color: inherit;
-//   }
-// `;
-
 export const defaultLinkTextStyle = css`
   display: inline;
   text-decoration: none;
