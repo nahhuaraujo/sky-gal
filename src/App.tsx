@@ -1,5 +1,5 @@
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import * as S from './App.styled';
 import { Navbar, Footer } from './components';
 import { About, Gallery, Home, NotFound } from './pages';
@@ -13,6 +13,7 @@ const App = () => {
         <Router>
           <Navbar />
           <Routes>
+            <Route path='/' element={<Navigate to={PublicRoutes.HOME} />} />
             <Route path={PublicRoutes.HOME} element={<Home />} />
             <Route path={PublicRoutes.GALLERY} element={<Gallery />} />
             <Route path={PublicRoutes.ABOUT} element={<About />} />

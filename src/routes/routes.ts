@@ -1,5 +1,5 @@
 export enum PublicRoutes {
-  HOME = '/',
+  HOME = 'sky-gal',
   GALLERY = 'gallery',
   ABOUT = 'about',
 }
