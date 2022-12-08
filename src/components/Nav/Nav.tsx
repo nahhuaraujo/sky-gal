@@ -1,11 +1,12 @@
 import { NavLink } from '../';
+import { PublicRoutes } from '../../routes';
 import * as S from './Nav.styled';
 
 const Nav = () => {
   return (
     <S.Nav>
-      <NavLink to='gallery'>Gallery</NavLink>
-      <NavLink to='about'>About</NavLink>
+      <NavLink to={`${PublicRoutes.GALLERY}`}>Gallery</NavLink>
+      <NavLink to={`${PublicRoutes.ABOUT}`}>About</NavLink>
     </S.Nav>
   );
 };
