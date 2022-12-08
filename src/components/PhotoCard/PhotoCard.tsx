@@ -9,6 +9,7 @@ const PhotoCard = (props: IProps) => {
   return (
     <S.PhotoCard>
       <img src={props.img} alt={props.description} title={props.description} />
+      <S.PhotoDescription>{props.description}</S.PhotoDescription>
       <S.PhotoActions>
         <S.PhotoViewButton>View</S.PhotoViewButton>
         <S.PhotoShareButton>Share</S.PhotoShareButton>

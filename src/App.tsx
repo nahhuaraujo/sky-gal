@@ -1,7 +1,7 @@
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
 import * as S from './App.styled';
-import { Navbar, Footer } from './components';
+import { Footer, Navbar } from './components';
 import { About, Gallery, Home, NotFound } from './pages';
 import store from './redux/store';
 import { PublicRoutes } from './routes';

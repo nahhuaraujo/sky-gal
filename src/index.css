@@ -12,10 +12,10 @@ html,
 body {
   min-width: fit-content;
   max-width: 100%;
+  background-color: #827aa1;
 }
 
 body {
-  background-color: #827aa1;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
     'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;

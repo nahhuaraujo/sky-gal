@@ -6,15 +6,14 @@ export const PhotoCard = styled.div`
   border-radius: 1rem;
   padding: 1rem;
   background-color: ${mainColorMid};
+  transition: 300ms;
 
   > img {
     width: 100%;
-    transition: 300ms;
+  }
 
-    :hover {
-      filter: opacity(0.8);
-      transform: scale(1.01);
-    }
+  :hover {
+    box-shadow: inset 0 -3rem 3rem rgba(0, 0, 0, 0.1), 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3);
   }
 `;
 
@@ -23,6 +22,14 @@ export const PhotoActions = styled.div`
   bottom: 0;
   display: flex;
   justify-content: end;
+
+  button {
+    margin-left: 1rem;
+  }
+`;
+
+export const PhotoDescription = styled.section`
+  margin-top: 1rem;
 `;
 
 export const PhotoViewButton = styled.button`
