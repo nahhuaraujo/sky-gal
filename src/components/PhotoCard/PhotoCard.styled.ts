@@ -1,36 +1,34 @@
 import styled from 'styled-components';
-import { defaultButtonStyle, mainColorMid, secondaryColorMid } from '../../styles/global-styled-css';
+import { defaultButtonStyle, mainColorMid } from '../../styles/global-styled-css';
 
-interface IPhotoCardProps {
-  height: number;
-}
-export const PhotoCard = styled.div<IPhotoCardProps>`
-  max-width: ${props => `${props.height}vh`};
-  /* border: 1px solid ${secondaryColorMid}; */
+export const PhotoCard = styled.div`
+  height: min-content;
   border-radius: 1rem;
   padding: 1rem;
-  margin: 0 auto 1rem;
   background-color: ${mainColorMid};
 
-  img {
-    max-width: 100%;
+  > img {
+    width: 100%;
+    transition: 300ms;
+
+    :hover {
+      filter: opacity(0.8);
+      transform: scale(1.01);
+    }
   }
 `;
 
 export const PhotoActions = styled.div`
   margin-top: 1rem;
+  bottom: 0;
   display: flex;
   justify-content: end;
 `;
 
-export const PhotoLikeButton = styled.button`
+export const PhotoViewButton = styled.button`
   ${defaultButtonStyle};
 `;
 
 export const PhotoShareButton = styled.button`
   ${defaultButtonStyle};
-`;
-
-export const PhotoDescription = styled.section`
-  margin-top: 1rem;
 `;

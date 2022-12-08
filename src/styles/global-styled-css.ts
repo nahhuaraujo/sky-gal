@@ -90,10 +90,10 @@ export const defaultPageStyle = css`
 export const defaultButtonStyle = css`
   border: 1px solid ${secondaryColorLight};
   padding: ${defaultPaddingValue};
-  margin-left: 1rem;
   color: ${secondaryColorLight};
   background-color: ${mainColorMid};
   cursor: pointer;
+  transition: 300ms;
 
   :hover {
     background-color: ${mainColorLight};
@@ -102,5 +102,4 @@ export const defaultButtonStyle = css`
     background-color: ${mainColorMid};
     color: inherit;
   }
-  transition: 300ms;
 `;
