@@ -8,12 +8,14 @@ export const PhotoCard = styled.div`
   background-color: ${mainColorMid};
   transition: 300ms;
 
-  > img {
-    width: 100%;
-  }
-
   :hover {
     box-shadow: inset 0 -3rem 3rem rgba(0, 0, 0, 0.1), 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  }
+`;
+
+export const PhotoCardImg = styled.div`
+  img {
+    width: 100%;
   }
 `;
 

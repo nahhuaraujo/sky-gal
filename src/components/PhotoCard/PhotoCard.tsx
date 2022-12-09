@@ -1,6 +1,8 @@
+import { NavLink } from '../../components';
 import * as S from './PhotoCard.styled';
 
 interface IProps {
+  id: number;
   description: string;
   img: string;
 }
@@ -8,10 +10,14 @@ interface IProps {
 const PhotoCard = (props: IProps) => {
   return (
     <S.PhotoCard>
-      <img src={props.img} alt={props.description} title={props.description} />
+      <S.PhotoCardImg>
+        <img src={props.img} alt={props.description} title={props.description} />
+      </S.PhotoCardImg>
       <S.PhotoDescription>{props.description}</S.PhotoDescription>
       <S.PhotoActions>
-        <S.PhotoViewButton>View</S.PhotoViewButton>
+        <NavLink to={`${props.id}`} type='button'>
+          View
+        </NavLink>
         <S.PhotoShareButton>Share</S.PhotoShareButton>
       </S.PhotoActions>
     </S.PhotoCard>
