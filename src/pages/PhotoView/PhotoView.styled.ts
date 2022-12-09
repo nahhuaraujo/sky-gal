@@ -1,5 +1,10 @@
 import styled from 'styled-components';
-import { defaultButtonStyle, mainColorMid, defaultPageStyle } from '../../styles/global-styled-css';
+import {
+  defaultButtonStyle,
+  defaultPageStyle,
+  mainColorMid,
+  secondaryFontSizeValue,
+} from '../../styles/global-styled-css';
 
 export const PhotoView = styled.main`
   ${defaultPageStyle}
@@ -12,6 +17,7 @@ export const PhotoViewContainer = styled.section`
   border-radius: 1rem;
   background-color: ${mainColorMid};
   transition: 300ms;
+  font-size: ${secondaryFontSizeValue};
 
   :hover {
     box-shadow: inset 0 -3rem 3rem rgba(0, 0, 0, 0.1), 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3);

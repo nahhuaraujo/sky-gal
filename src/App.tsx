@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-d
 import * as S from './App.styled';
 import { Footer, Navbar } from './components';
 import { TopScrollHOC } from './hoc';
-import { About, Gallery, Home, NotFound, PhotoView } from './pages';
+import { About, Contact, Gallery, Home, NotFound, PhotoView } from './pages';
 import store from './redux/store';
 import { PublicRoutes } from './routes';
 
@@ -20,6 +20,7 @@ const App = () => {
               <Route path={PublicRoutes.GALLERY} element={<Gallery />} />
               <Route path={`${PublicRoutes.GALLERY}/:id`} element={<PhotoView />} />
               <Route path={PublicRoutes.ABOUT} element={<About />} />
+              <Route path={PublicRoutes.CONTACT} element={<Contact />} />
               <Route path='*' element={<NotFound />} />
             </Routes>
           </TopScrollHOC>

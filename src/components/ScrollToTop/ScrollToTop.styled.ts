@@ -4,7 +4,6 @@ import { mainColorLight } from '../../styles/global-styled-css';
 export const ScrollToTop = styled.div``;
 
 export const Arrow = styled.div`
-  padding-top: 0.5rem;
   text-align: center;
   width: 40px;
   height: 40px;
@@ -14,6 +13,7 @@ export const Arrow = styled.div`
   bottom: 100px;
   right: 75px;
   cursor: pointer;
+  font-size: 2rem;
   transition: 300ms;
 
   :hover {

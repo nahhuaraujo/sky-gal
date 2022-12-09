@@ -9,6 +9,7 @@ export const secondaryColorLight = '#f2edb8';
 
 export const defaultPaddingValue = '0.5rem 1rem';
 export const defaultFontSizeValue = '2.5rem';
+export const secondaryFontSizeValue = '1.5rem';
 
 const border = css`
   padding: ${defaultPaddingValue};

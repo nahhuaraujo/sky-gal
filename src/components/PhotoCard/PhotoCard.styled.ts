@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { defaultButtonStyle, mainColorMid } from '../../styles/global-styled-css';
+import { defaultButtonStyle, mainColorMid, secondaryFontSizeValue } from '../../styles/global-styled-css';
 
 export const PhotoCard = styled.div`
   height: min-content;
@@ -7,6 +7,7 @@ export const PhotoCard = styled.div`
   padding: 1rem;
   background-color: ${mainColorMid};
   transition: 300ms;
+  font-size: ${secondaryFontSizeValue};
 
   :hover {
     box-shadow: inset 0 -3rem 3rem rgba(0, 0, 0, 0.1), 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3);
