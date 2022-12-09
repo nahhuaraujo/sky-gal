@@ -1,5 +1,6 @@
 export * from './Card';
 export * from './Footer';
+export * from './Input';
 export * from './Loading';
 export * from './Logo';
 export * from './Nav';

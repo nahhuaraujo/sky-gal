@@ -11,6 +11,9 @@ const Nav = () => {
       <NavLink to={`${PublicRoutes.ABOUT}`} type='link'>
         About
       </NavLink>
+      <NavLink to={`${PublicRoutes.CONTACT}`} type='link'>
+        Contact
+      </NavLink>
     </S.Nav>
   );
 };
