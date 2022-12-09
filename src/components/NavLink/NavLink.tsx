@@ -1,11 +1,10 @@
-import { ReactNode } from 'react';
 import * as S from './NavLink.styled';
 
 interface IProps {
   to: string;
   padding?: 'none' | 'default';
-  type?: 'text' | 'button';
-  children: ReactNode;
+  type?: 'text' | 'button' | 'link';
+  children: React.ReactNode;
 }
 
 const NavLink = ({ to, padding, type, children }: IProps) => {

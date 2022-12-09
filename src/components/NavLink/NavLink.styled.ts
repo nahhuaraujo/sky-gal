@@ -1,10 +1,15 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { defaultLinkButtonStyle, defaultLinkTextStyle, defaultPaddingValue } from '../../styles/global-styled-css';
+import {
+  defaultLinkButtonStyle,
+  defaultLinkTextStyle,
+  defaultPaddingValue,
+  defaultButtonStyle,
+} from '../../styles/global-styled-css';
 
 interface INavLinkProps {
   padding?: 'none' | 'default';
-  type?: 'text' | 'button';
+  type?: 'text' | 'button' | 'link';
 }
 
 export const NavLink = styled(Link)<INavLinkProps>`
@@ -12,5 +17,6 @@ export const NavLink = styled(Link)<INavLinkProps>`
   padding: ${({ padding = 'default' }) => (padding === 'default' ? `${defaultPaddingValue}` : '0')};
   display: flex;
   align-items: center;
-  ${({ type = 'button' }) => (type === 'button' ? defaultLinkButtonStyle : defaultLinkTextStyle)}
+  ${({ type = 'link' }) =>
+    type === 'link' ? defaultLinkButtonStyle : type === 'text' ? defaultLinkTextStyle : defaultButtonStyle}
 `;

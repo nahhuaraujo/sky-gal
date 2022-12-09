@@ -5,8 +5,12 @@ import * as S from './Nav.styled';
 const Nav = () => {
   return (
     <S.Nav>
-      <NavLink to={`${PublicRoutes.GALLERY}`}>Gallery</NavLink>
-      <NavLink to={`${PublicRoutes.ABOUT}`}>About</NavLink>
+      <NavLink to={`${PublicRoutes.GALLERY}`} type='link'>
+        Gallery
+      </NavLink>
+      <NavLink to={`${PublicRoutes.ABOUT}`} type='link'>
+        About
+      </NavLink>
     </S.Nav>
   );
 };
