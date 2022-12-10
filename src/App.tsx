@@ -15,8 +15,7 @@ const App = () => {
           <Navbar />
           <TopScrollHOC>
             <Routes>
-              <Route path='/' element={<Navigate to={PublicRoutes.HOME} />} />
-              <Route path={PublicRoutes.HOME} element={<Home />} />
+              <Route path='/' element={<Home />} />
               <Route path={PublicRoutes.GALLERY} element={<Gallery />} />
               <Route path={`${PublicRoutes.GALLERY}/:id`} element={<PhotoView />} />
               <Route path={PublicRoutes.ABOUT} element={<About />} />

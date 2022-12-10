@@ -10,7 +10,6 @@ const Contact = () => {
 
   const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formValues);
     clearFormValues();
     alert('This feature will be available soon!');
   };

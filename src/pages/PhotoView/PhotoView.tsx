@@ -28,7 +28,7 @@ const PhotoView = () => {
         </S.PhotoViewImg>
         <S.PhotoViewDescription>{photo?.description}</S.PhotoViewDescription>
         <S.PhotoViewActions>
-          <NavLink to={`/${PublicRoutes.GALLERY}`} type='button'>
+          <NavLink to={PublicRoutes.GALLERY} type='button'>
             Back
           </NavLink>
           <S.PhotoShareButton>Share</S.PhotoShareButton>
