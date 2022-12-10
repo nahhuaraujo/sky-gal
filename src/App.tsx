@@ -1,5 +1,5 @@
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import * as S from './App.styled';
 import { Footer, Navbar } from './components';
 import { TopScrollHOC } from './hoc';
