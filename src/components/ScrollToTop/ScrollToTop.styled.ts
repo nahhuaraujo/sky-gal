@@ -10,8 +10,8 @@ export const Arrow = styled.div`
   border-radius: 50%;
   background-color: ${mainColorLight};
   position: fixed;
-  bottom: 100px;
-  right: 75px;
+  bottom: 8%;
+  left: 8%;
   cursor: pointer;
   font-size: 2rem;
   transition: 300ms;
@@ -24,7 +24,7 @@ export const Arrow = styled.div`
     transform: scale(1);
   }
 
-  @media (max-width: 850px) {
-    opacity: 0;
+  @media (max-width: 620px) {
+    left: 45px;
   }
 `;
