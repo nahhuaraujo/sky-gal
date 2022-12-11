@@ -21,13 +21,9 @@ export const tableBorder = css`
   width: 70%;
   margin: 1rem auto 0;
   table-layout: fixed;
-
   ${border}
 
-  td {
-    ${border}
-  }
-  th {
+  td, th {
     ${border}
   }
 `;
@@ -90,6 +86,7 @@ export const defaultPageStyle = css`
 
 export const defaultButtonStyle = css`
   border: 1px solid ${secondaryColorLight};
+  border-radius: 1rem;
   padding: ${defaultPaddingValue};
   color: ${secondaryColorLight};
   background-color: ${mainColorMid};
