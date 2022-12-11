@@ -3,12 +3,11 @@ import { scrollTo } from '../../util/scroll.util';
 import * as S from './ScrollToTop.styled';
 
 const ScrollToTop = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [scrolled, setScrolled] = useState(0);
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
-    if (scrolled <= 300) return setIsVisible(false);
-    if (scrolled > 300) return setIsVisible(true);
+    setScrolled(scrolled);
   };
 
   window.addEventListener('scroll', toggleVisible);
@@ -17,7 +16,13 @@ const ScrollToTop = () => {
     scrollTo(0);
   };
 
-  return <S.ScrollToTop>{isVisible && <S.Arrow onClick={clickHandler}>^</S.Arrow>}</S.ScrollToTop>;
+  return (
+    <S.ScrollToTop>
+      <S.Arrow onClick={clickHandler} scrolled={scrolled}>
+        ^
+      </S.Arrow>
+    </S.ScrollToTop>
+  );
 };
 
 export default ScrollToTop;

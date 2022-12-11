@@ -3,7 +3,10 @@ import { mainColorLight } from '../../styles/global-styled-css';
 
 export const ScrollToTop = styled.div``;
 
-export const Arrow = styled.div`
+interface IArrowProps {
+  scrolled: number;
+}
+export const Arrow = styled.div<IArrowProps>`
   text-align: center;
   width: 40px;
   height: 40px;
@@ -14,6 +17,7 @@ export const Arrow = styled.div`
   left: 8%;
   cursor: pointer;
   font-size: 2rem;
+  opacity: ${({ scrolled }) => (scrolled > 300 ? 1 : 0)};
   transition: 300ms;
 
   :hover {

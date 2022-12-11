@@ -1,7 +1,6 @@
-import { PhotoCard } from '../../components';
+import { PhotoCard, ScrollToTop } from '../../components';
 import { gallery } from '../../data';
 import * as S from './Gallery.styled';
-import { ScrollToTop } from '../../components';
 
 const Gallery = () => {
   return (
