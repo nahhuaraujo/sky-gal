@@ -5,12 +5,12 @@ import * as S from './ScrollToTop.styled';
 const ScrollToTop = () => {
   const [scrolled, setScrolled] = useState(0);
 
-  const toggleVisible = () => {
+  const setScrollTop = () => {
     const scrolled = document.documentElement.scrollTop;
     setScrolled(scrolled);
   };
 
-  window.addEventListener('scroll', toggleVisible);
+  window.addEventListener('scroll', setScrollTop);
 
   const clickHandler = () => {
     scrollTo(0);
