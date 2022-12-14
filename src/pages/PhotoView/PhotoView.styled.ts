@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {
   defaultButtonStyle,
+  defaultHoverShadow,
   defaultPageStyle,
   mainColorMid,
   secondaryFontSizeValue,
@@ -19,9 +20,7 @@ export const PhotoViewContainer = styled.section`
   transition: 300ms;
   font-size: ${secondaryFontSizeValue};
 
-  :hover {
-    box-shadow: inset 0 -3rem 3rem rgba(0, 0, 0, 0.1), 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3);
-  }
+  ${defaultHoverShadow}
 `;
 
 export const PhotoViewImg = styled.div`

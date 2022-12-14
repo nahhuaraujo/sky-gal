@@ -2,7 +2,11 @@ import { useState } from 'react';
 import { FacebookShareButton, LinkedInShareButton, LinkShareButton } from '../';
 import * as S from './ShareButton.styled';
 
-const ShareButton = () => {
+interface IProps {
+  id?: number;
+}
+
+const ShareButton = (props: IProps) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const openDropdown = () => {
@@ -19,9 +23,9 @@ const ShareButton = () => {
       <S.ShareButtonDropdown>
         <S.ButtonDropback isVisible={isVisible} onClick={closeDropdown} />
         <S.ShareButtonActions isVisible={isVisible}>
-          <LinkShareButton closeDropdown={closeDropdown} />
-          <FacebookShareButton closeDropdown={closeDropdown} />
-          <LinkedInShareButton closeDropdown={closeDropdown} />
+          <LinkShareButton id={props.id} closeDropdown={closeDropdown} />
+          <FacebookShareButton id={props.id} closeDropdown={closeDropdown} />
+          <LinkedInShareButton id={props.id} closeDropdown={closeDropdown} />
         </S.ShareButtonActions>
       </S.ShareButtonDropdown>
     </S.ShareButton>

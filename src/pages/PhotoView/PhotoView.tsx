@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { NavLink } from '../../components';
+import { NavLink, ShareButton } from '../../components';
 import { gallery } from '../../data';
 import { PublicRoutes } from '../../routes';
 import * as S from './PhotoView.styled';
 
 interface Photo {
-  id: number;
   description: string;
   img: string;
 }
@@ -31,7 +30,7 @@ const PhotoView = () => {
           <NavLink to={PublicRoutes.GALLERY} type='button'>
             Back
           </NavLink>
-          <S.PhotoShareButton>Share</S.PhotoShareButton>
+          <ShareButton />
         </S.PhotoViewActions>
       </S.PhotoViewContainer>
     </S.PhotoView>

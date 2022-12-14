@@ -18,7 +18,7 @@ const PhotoCard = (props: IProps) => {
         <NavLink to={`${props.id}`} type='button'>
           View
         </NavLink>
-        <ShareButton />
+        <ShareButton id={props.id} />
       </S.PhotoActions>
     </S.PhotoCard>
   );
