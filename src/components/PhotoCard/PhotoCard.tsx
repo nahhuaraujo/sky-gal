@@ -1,4 +1,4 @@
-import { NavLink } from '../../components';
+import { NavLink, ShareButton } from '../../components';
 import * as S from './PhotoCard.styled';
 
 interface IProps {
@@ -18,7 +18,7 @@ const PhotoCard = (props: IProps) => {
         <NavLink to={`${props.id}`} type='button'>
           View
         </NavLink>
-        <S.PhotoShareButton>Share</S.PhotoShareButton>
+        <ShareButton />
       </S.PhotoActions>
     </S.PhotoCard>
   );

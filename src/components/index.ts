@@ -8,4 +8,5 @@ export * from './Navbar';
 export * from './NavLink';
 export * from './PhotoCard';
 export * from './ScrollToTop';
+export * from './ShareButton';
 export * from './Spinner';
