@@ -6,6 +6,7 @@ import { PublicRoutes } from '../../routes';
 import * as S from './PhotoView.styled';
 
 interface Photo {
+  id: number;
   description: string;
   img: string;
 }
