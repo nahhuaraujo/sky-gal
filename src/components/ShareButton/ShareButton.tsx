@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { FacebookShareButton, LinkedInShareButton, LinkShareButton } from '../';
 import * as S from './ShareButton.styled';
 
 const ShareButton = () => {
@@ -18,10 +19,9 @@ const ShareButton = () => {
       <S.ShareButtonDropdown>
         <S.ButtonDropback isVisible={isVisible} onClick={closeDropdown} />
         <S.ShareButtonActions isVisible={isVisible}>
-          <button onClick={closeDropdown}>Copy link</button>
-          <button onClick={closeDropdown}>Facebook</button>
-          <button onClick={closeDropdown}>Instagram</button>
-          <button onClick={closeDropdown}>LinkedIn</button>
+          <LinkShareButton closeDropdown={closeDropdown} />
+          <FacebookShareButton closeDropdown={closeDropdown} />
+          <LinkedInShareButton closeDropdown={closeDropdown} />
         </S.ShareButtonActions>
       </S.ShareButtonDropdown>
     </S.ShareButton>

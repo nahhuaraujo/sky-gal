@@ -1,5 +1,10 @@
 import styled from 'styled-components';
-import { defaultButtonStyle, defaultPaddingValue, secondaryColorLight } from '../../styles/global-styled-css';
+import {
+  defaultButtonStyle,
+  defaultHoverShadow,
+  defaultPaddingValue,
+  mainColorMid,
+} from '../../styles/global-styled-css';
 
 export const ShareButton = styled.div`
   position: relative;
@@ -31,22 +36,14 @@ interface IShareButtonActionsProps {
 }
 export const ShareButtonActions = styled.div<IShareButtonActionsProps>`
   width: max-content;
-  border: 1px solid ${secondaryColorLight};
   border-radius: 1rem;
   padding: ${defaultPaddingValue};
+  background-color: ${mainColorMid};
   position: absolute;
   top: 60px;
   right: -50px;
   z-index: 100;
   opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
   transition: 300ms;
-
-  button:first-child {
-    margin: 0;
-  }
-  button {
-    margin-left: 0.5rem;
-    ${defaultButtonStyle}
-    font-size: 1rem;
-  }
+  ${defaultHoverShadow}
 `;

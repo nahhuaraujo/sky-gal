@@ -84,6 +84,12 @@ export const defaultPageStyle = css`
   min-width: min-content;
 `;
 
+export const defaultHoverShadow = css`
+  :hover {
+    box-shadow: inset 0 -3rem 3rem rgba(0, 0, 0, 0.1), 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  }
+`;
+
 export const defaultButtonStyle = css`
   border: 1px solid ${secondaryColorLight};
   border-radius: 1rem;
@@ -99,5 +105,16 @@ export const defaultButtonStyle = css`
   :active {
     background-color: ${mainColorMid};
     color: inherit;
+  }
+`;
+
+export const shareLinkButton = css`
+  display: inline;
+
+  a {
+    margin-left: 0.5rem;
+    ${defaultButtonStyle}
+    color: ${secondaryColorLight};
+    font-size: 1rem;
   }
 `;
