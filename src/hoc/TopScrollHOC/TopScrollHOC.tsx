@@ -6,7 +6,7 @@ interface IProps {
 
 const TopScrollHOC = (props: IProps) => {
   useScrollToTop();
-  return <div>{props.children}</div>;
+  return <>{props.children}</>;
 };
 
 export default TopScrollHOC;

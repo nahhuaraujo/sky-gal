@@ -79,6 +79,7 @@ export const defaultFontHeader = css`
 `;
 
 export const defaultPageStyle = css`
+  height: 100%;
   margin: 1rem 2rem 0;
   padding-bottom: 4rem;
   min-width: min-content;

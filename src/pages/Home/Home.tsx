@@ -1,20 +1,13 @@
 import * as S from './Home.styled';
-import femFigure from '../../assets/gallery/fem-figure.png';
+import sky from '../../assets/gallery/Sky_1.jpg';
 
 const Home = () => {
   return (
     <S.Home>
       <S.ImgContainer>
-        <S.Img src={femFigure} />
-        <S.GradiantOverlay />
+        <p>Welcome to Sky Gal's photo gallery, please enjoy the views from her very own eyes.</p>
+        <img src={sky} alt='Sky Gal' />
       </S.ImgContainer>
-      <p>
-        Carolina is a fan of the sky, be it night, day or evening, she can hardly resist the temptation to take the cell
-        phone out of her pocket to capture the great dome no matter what state it is in, be it cloudy, sunny or stormy.
-      </p>
-      <p>
-        That's why we call her the sky gal <span>(sky girl)</span>.
-      </p>
     </S.Home>
   );
 };
