@@ -1,19 +1,31 @@
 import styled from 'styled-components';
-import { defaultPageStyle, defaultFontSizeValue } from '../../styles/global-styled-css';
+import { defaultFontSizeValue, defaultPageStyle, mainColorDark } from '../../styles/global-styled-css';
 
 export const Home = styled.main`
-  min-height: 100vh;
-  height: 100%;
-  font-size: ${defaultFontSizeValue};
   ${defaultPageStyle};
+  font-size: ${defaultFontSizeValue};
 
+  p {
+    position: relative;
+  }
   span {
     font-style: italic;
   }
 `;
 
+export const ImgContainer = styled.div`
+  position: relative;
+`;
+
+export const GradiantOverlay = styled.div`
+  width: 100%;
+  height: 582px;
+  background: linear-gradient(to bottom, transparent, ${mainColorDark});
+  position: absolute;
+`;
+
 export const Img = styled.img`
-  height: 90vh;
+  width: 600px;
   float: left;
   shape-outside: polygon(
     289px 86px,
