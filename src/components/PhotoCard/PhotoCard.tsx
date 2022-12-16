@@ -1,24 +1,26 @@
 import { NavLink, ShareButton } from '../../components';
+import { IPhoto } from '../../models';
 import * as S from './PhotoCard.styled';
 
 interface IProps {
-  id: number;
-  description: string;
-  img: string;
+  photo: IPhoto;
 }
 
-const PhotoCard = (props: IProps) => {
+const PhotoCard = ({ photo }: IProps) => {
   return (
     <S.PhotoCard>
       <S.PhotoCardImg>
-        <img src={props.img} alt={props.description} title={props.description} />
+        <img src={photo.img} alt={photo.description} title={photo.description} />
       </S.PhotoCardImg>
-      <S.PhotoDescription>{props.description}</S.PhotoDescription>
+      <S.PhotoDetails>
+        <div>{photo.title}</div>
+        <div>{photo.location}</div>
+      </S.PhotoDetails>
       <S.PhotoActions>
-        <NavLink to={`${props.id}`} type='button'>
+        <NavLink to={`${photo.id}`} type='button'>
           View
         </NavLink>
-        <ShareButton id={props.id} />
+        <ShareButton id={photo.id} />
       </S.PhotoActions>
     </S.PhotoCard>
   );

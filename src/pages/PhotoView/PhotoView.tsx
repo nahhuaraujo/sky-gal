@@ -2,17 +2,12 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { NavLink, ShareButton } from '../../components';
 import { gallery } from '../../data';
+import { IPhoto } from '../../models';
 import { PublicRoutes } from '../../routes';
 import * as S from './PhotoView.styled';
 
-interface Photo {
-  id: number;
-  description: string;
-  img: string;
-}
-
 const PhotoView = () => {
-  const [photo, setPhoto] = useState<Photo>();
+  const [photo, setPhoto] = useState<IPhoto>();
   const { id } = useParams();
 
   useEffect(() => {
@@ -24,9 +19,12 @@ const PhotoView = () => {
     <S.PhotoView>
       <S.PhotoViewContainer>
         <S.PhotoViewImg>
-          <img src={photo?.img} alt={photo?.description} title={photo?.description} />
+          <img src={photo?.img} alt={photo?.description} title={photo?.title} />
         </S.PhotoViewImg>
-        <S.PhotoViewDescription>{photo?.description}</S.PhotoViewDescription>
+        <S.PhotoViewDetails>
+          <div>{photo?.title}</div>
+          <div>{photo?.location}</div>
+        </S.PhotoViewDetails>
         <S.PhotoViewActions>
           <NavLink to={PublicRoutes.GALLERY} type='button'>
             Back

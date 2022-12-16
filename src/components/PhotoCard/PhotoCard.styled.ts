@@ -34,8 +34,10 @@ export const PhotoActions = styled.div`
   }
 `;
 
-export const PhotoDescription = styled.section`
-  margin-top: 1rem;
+export const PhotoDetails = styled.section`
+  div {
+    margin-top: 1rem;
+  }
 `;
 
 export const PhotoViewButton = styled.button`

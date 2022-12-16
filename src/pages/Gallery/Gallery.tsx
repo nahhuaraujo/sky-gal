@@ -5,8 +5,8 @@ import * as S from './Gallery.styled';
 const Gallery = () => {
   return (
     <S.Gallery>
-      {gallery.map(picture => (
-        <PhotoCard key={picture.id} id={picture.id} description={picture.description} img={picture.img} />
+      {gallery.map(photo => (
+        <PhotoCard key={photo.id} photo={photo} />
       ))}
       <ScrollToTop />
     </S.Gallery>
