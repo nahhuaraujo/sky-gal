@@ -5,9 +5,9 @@ const Contact = () => {
     <S.Contact>
       <p>Want to stay in contact?</p>
       <ul>
-        <li>Email: carolina.muguruza@gmail.com</li>
+        <li>Email: carolina.muguruza@hotmail.com</li>
         <li>Facebook: Carolina Muguruza</li>
-        <li>Instagram: cmuguruza</li>
+        <li>Instagram: caroomuguruza</li>
       </ul>
     </S.Contact>
   );
