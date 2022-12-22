@@ -79,9 +79,8 @@ export const defaultFontHeader = css`
 `;
 
 export const defaultPageStyle = css`
-  height: 100%;
-  margin: 1rem 2rem 0;
-  padding-bottom: 4rem;
+  min-height: 100vh;
+  padding: 1rem 2rem 4rem;
   min-width: min-content;
 `;
 
@@ -96,12 +95,12 @@ export const defaultButtonStyle = css`
   border-radius: 1rem;
   padding: ${defaultPaddingValue};
   color: ${secondaryColorLight};
-  background-color: ${mainColorMid};
+  background-color: ${mainColorLight};
   cursor: pointer;
   transition: 300ms;
 
   :hover {
-    background-color: ${mainColorLight};
+    background-color: ${mainColorMid};
   }
   :active {
     background-color: ${mainColorMid};

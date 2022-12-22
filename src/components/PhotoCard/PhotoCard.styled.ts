@@ -7,6 +7,7 @@ import {
 } from '../../styles/global-styled-css';
 
 export const PhotoCard = styled.div`
+  min-width: min-content;
   height: min-content;
   border-radius: 1rem;
   padding: 1rem;
@@ -27,7 +28,7 @@ export const PhotoActions = styled.div`
   margin-top: 1rem;
   bottom: 0;
   display: flex;
-  justify-content: end;
+  justify-content: center;
 
   button {
     margin-left: 1rem;

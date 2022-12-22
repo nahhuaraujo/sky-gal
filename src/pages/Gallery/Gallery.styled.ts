@@ -5,7 +5,7 @@ export const Gallery = styled.main`
   ${defaultPageStyle};
 
   display: grid;
-  grid-template-columns: repeat(1, 60%);
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
   gap: 1rem;
   justify-content: center;
 `;
