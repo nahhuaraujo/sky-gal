@@ -21,10 +21,10 @@ const PhotoView = () => {
         <S.PhotoViewImg>
           <img src={photo?.img} alt={photo?.description} title={photo?.title} />
         </S.PhotoViewImg>
-        <S.PhotoViewDetails>
-          <div>{photo?.title}</div>
-          <div>{photo?.location}</div>
-        </S.PhotoViewDetails>
+        <div>
+          <S.PhotoTitle>{photo?.title}</S.PhotoTitle>
+          <S.PhotoLocation>{photo?.location}</S.PhotoLocation>
+        </div>
         <S.PhotoViewActions>
           <NavLink to={PublicRoutes.GALLERY} type='button'>
             Back

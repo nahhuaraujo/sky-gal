@@ -86,21 +86,22 @@ export const defaultPageStyle = css`
 
 export const defaultHoverShadow = css`
   :hover {
-    box-shadow: inset 0 -3rem 3rem rgba(0, 0, 0, 0.1), 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -3rem 3rem rgba(0, 0, 0, 0.1), 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.8);
   }
 `;
 
 export const defaultButtonStyle = css`
   border: 1px solid ${secondaryColorLight};
-  border-radius: 1rem;
+  border-radius: 5px;
   padding: ${defaultPaddingValue};
   color: ${secondaryColorLight};
-  background-color: ${mainColorLight};
+  background-color: ${mainColorMid};
   cursor: pointer;
   transition: 300ms;
 
   :hover {
-    background-color: ${mainColorMid};
+    background-color: ${secondaryColorLight};
+    color: ${mainColorMid};
   }
   :active {
     background-color: ${mainColorMid};
@@ -117,4 +118,11 @@ export const shareLinkButton = css`
     color: ${secondaryColorLight};
     font-size: 1rem;
   }
+`;
+
+export const photoTitleStyle = css``;
+
+export const photoLocationStyle = css`
+  font-size: 1rem;
+  font-style: italic;
 `;

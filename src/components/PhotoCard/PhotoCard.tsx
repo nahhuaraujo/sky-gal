@@ -12,10 +12,10 @@ const PhotoCard = ({ photo }: IProps) => {
       <S.PhotoCardImg>
         <img src={photo.img} alt={photo.description} title={photo.description} />
       </S.PhotoCardImg>
-      <S.PhotoDetails>
-        <div>{photo.title}</div>
-        <div>{photo.location}</div>
-      </S.PhotoDetails>
+      <div>
+        <S.PhotoTitle>{photo.title}</S.PhotoTitle>
+        <S.PhotoLocation>{photo.location}</S.PhotoLocation>
+      </div>
       <S.PhotoActions>
         <NavLink to={`${photo.id}`} type='button'>
           View

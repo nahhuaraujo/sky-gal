@@ -4,6 +4,7 @@ import {
   defaultHoverShadow,
   defaultPageStyle,
   mainColorMid,
+  photoLocationStyle,
   secondaryFontSizeValue,
 } from '../../styles/global-styled-css';
 
@@ -15,7 +16,7 @@ export const PhotoViewContainer = styled.section`
   width: 90%;
   padding: 1rem;
   margin: 0 auto;
-  border-radius: 1rem;
+  border-radius: 5px;
   background-color: ${mainColorMid};
   transition: 300ms;
   font-size: ${secondaryFontSizeValue};
@@ -40,10 +41,13 @@ export const PhotoViewActions = styled.div`
   }
 `;
 
-export const PhotoViewDetails = styled.section`
-  div {
-    margin-top: 1rem;
-  }
+export const PhotoTitle = styled.div`
+  margin-top: 1rem;
+`;
+
+export const PhotoLocation = styled.div`
+  margin-top: 0.5rem;
+  ${photoLocationStyle};
 `;
 
 export const PhotoBackButton = styled.button`

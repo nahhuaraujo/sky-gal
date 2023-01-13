@@ -36,14 +36,14 @@ interface IShareButtonActionsProps {
 }
 export const ShareButtonActions = styled.div<IShareButtonActionsProps>`
   width: max-content;
-  border-radius: 1rem;
+  border-radius: 5px;
   padding: ${defaultPaddingValue};
   background-color: ${mainColorMid};
   position: absolute;
   top: 60px;
   right: -50px;
   z-index: 100;
-  opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
+  display: ${({ isVisible }) => (isVisible ? 'block' : 'none')};
   transition: 300ms;
   ${defaultHoverShadow}
 `;
