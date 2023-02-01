@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mainColorLight } from '../../styles/global-styled-css';
+import { mainColorLight, defaultHoverShadow } from '../../styles/global-styled-css';
 
 export const ScrollToTop = styled.div``;
 
@@ -12,6 +12,7 @@ export const Arrow = styled.div<IArrowProps>`
   height: 40px;
   border-radius: 50%;
   background-color: ${mainColorLight};
+  border: 1px solid rgba(0, 0, 0, 0.2);
   position: fixed;
   bottom: 8%;
   left: 8%;
@@ -23,6 +24,8 @@ export const Arrow = styled.div<IArrowProps>`
   :hover {
     transform: scale(1.3);
   }
+
+  ${defaultHoverShadow};
 
   :active {
     transform: scale(1);

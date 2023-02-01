@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import { defaultFontSizeValue } from '../../styles/global-styled-css';
 
-export const Home = styled.main`
-  min-height: 100vh;
+export const Home = styled.section`
   min-width: min-content;
   font-size: ${defaultFontSizeValue};
 `;

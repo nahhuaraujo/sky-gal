@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { defaultFontSizeValue, defaultPageStyle, mainColorDark } from '../../styles/global-styled-css';
+import { defaultFontSizeValue, mainColorDark } from '../../styles/global-styled-css';
 
-export const About = styled.main`
-  ${defaultPageStyle};
+export const About = styled.section`
   font-size: ${defaultFontSizeValue};
 
   p {

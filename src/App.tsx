@@ -10,14 +10,16 @@ const App = () => {
   return (
     <S.App>
       <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path={PublicRoutes.GALLERY} element={<Gallery />} />
-        <Route path={`${PublicRoutes.GALLERY}/:id`} element={<PhotoView />} />
-        <Route path={PublicRoutes.ABOUT} element={<About />} />
-        <Route path={PublicRoutes.CONTACT} element={<Contact />} />
-        <Route path='*' element={<NotFound />} />
-      </Routes>
+      <S.Main>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path={PublicRoutes.GALLERY} element={<Gallery />} />
+          <Route path={`${PublicRoutes.GALLERY}/:id`} element={<PhotoView />} />
+          <Route path={PublicRoutes.ABOUT} element={<About />} />
+          <Route path={PublicRoutes.CONTACT} element={<Contact />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+      </S.Main>
       <Footer />
     </S.App>
   );

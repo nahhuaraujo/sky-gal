@@ -2,15 +2,12 @@ import styled from 'styled-components';
 import {
   defaultButtonStyle,
   defaultHoverShadow,
-  defaultPageStyle,
   mainColorMid,
   photoLocationStyle,
   secondaryFontSizeValue,
 } from '../../styles/global-styled-css';
 
-export const PhotoView = styled.main`
-  ${defaultPageStyle}
-`;
+export const PhotoView = styled.section``;
 
 export const PhotoViewContainer = styled.section`
   width: 90%;

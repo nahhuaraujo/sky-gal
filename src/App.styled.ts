@@ -7,4 +7,10 @@ export const App = styled.div`
   color: ${secondaryColorLight};
 
   display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+`;
+
+export const Main = styled.div`
+  padding: 0 1rem;
 `;

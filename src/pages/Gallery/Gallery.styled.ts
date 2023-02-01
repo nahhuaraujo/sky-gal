@@ -1,9 +1,6 @@
 import styled from 'styled-components';
-import { defaultPageStyle } from '../../styles/global-styled-css';
 
-export const Gallery = styled.main`
-  ${defaultPageStyle};
-
+export const Gallery = styled.section`
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(4, 1fr);

@@ -78,11 +78,11 @@ export const defaultFontHeader = css`
   text-align: center;
 `;
 
-export const defaultPageStyle = css`
-  min-height: 100vh;
-  padding: 1rem 2rem 4rem;
-  min-width: min-content;
-`;
+// export const defaultPageStyle = css`
+//   min-height: 100vh;
+//   padding: 1rem 2rem 4rem;
+//   min-width: min-content;
+// `;
 
 export const defaultHoverShadow = css`
   :hover {

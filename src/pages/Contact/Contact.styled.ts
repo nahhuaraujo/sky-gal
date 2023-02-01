@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { defaultFontSizeValue, defaultPageStyle } from '../../styles/global-styled-css';
+import { defaultFontSizeValue } from '../../styles/global-styled-css';
 
-export const Contact = styled.main`
-  ${defaultPageStyle}
+export const Contact = styled.section`
+  height: 100%;
   font-size: ${defaultFontSizeValue};
   text-align: center;
 

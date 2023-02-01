@@ -17,7 +17,7 @@ const ScrollToTop = () => {
   };
 
   return (
-    <S.ScrollToTop>
+    <S.ScrollToTop title='Scroll to top'>
       <S.Arrow onClick={clickHandler} scrolled={scrolled}>
         ^
       </S.Arrow>
