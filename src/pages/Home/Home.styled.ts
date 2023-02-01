@@ -1,14 +1,15 @@
 import styled from 'styled-components';
-import { defaultFontSizeValue, defaultPageStyle } from '../../styles/global-styled-css';
+import { defaultFontSizeValue } from '../../styles/global-styled-css';
 
 export const Home = styled.main`
-  ${defaultPageStyle};
+  min-height: 100vh;
+  min-width: min-content;
   font-size: ${defaultFontSizeValue};
 `;
 
 export const ImgContainer = styled.div`
   position: relative;
-
+  width: 100%;
   p {
     width: 70%;
     text-align: center;
@@ -19,5 +20,6 @@ export const ImgContainer = styled.div`
   }
   img {
     width: 100%;
+    object-fit: cover;
   }
 `;

@@ -7,7 +7,7 @@ export const secondaryColorDark = '#ec8b8d';
 export const secondaryColorMid = '#f0a78b';
 export const secondaryColorLight = '#f2edb8';
 
-export const defaultPaddingValue = '0.5rem 1rem';
+export const defaultPaddingValue = '0.5rem 2rem';
 export const defaultFontSizeValue = '2.5rem';
 export const secondaryFontSizeValue = '1.5rem';
 

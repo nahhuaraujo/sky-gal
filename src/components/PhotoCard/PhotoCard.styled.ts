@@ -32,13 +32,9 @@ export const PhotoCardImg = styled.div`
 
 export const PhotoActions = styled.div`
   margin-top: 1rem;
-  bottom: 0;
   display: flex;
   justify-content: center;
-
-  button {
-    margin-left: 1rem;
-  }
+  gap: 1rem;
 `;
 
 export const PhotoTitle = styled.div`

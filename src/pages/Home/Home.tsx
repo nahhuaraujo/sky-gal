@@ -6,7 +6,9 @@ const Home = () => {
     <S.Home>
       <S.ImgContainer>
         <p>Welcome to Sky Gal's photo gallery, please enjoy the views from her very own eyes.</p>
-        <img src={sky} alt='Sky Gal' />
+        <div>
+          <img src={sky} alt='Sky Gal' />
+        </div>
       </S.ImgContainer>
     </S.Home>
   );

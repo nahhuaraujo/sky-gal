@@ -5,4 +5,6 @@ export const App = styled.div`
   min-height: 100vh;
   position: relative;
   color: ${secondaryColorLight};
+
+  display: grid;
 `;
