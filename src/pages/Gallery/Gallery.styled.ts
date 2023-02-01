@@ -9,7 +9,7 @@ export const Gallery = styled.section`
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (width < 600px) {
+  @media (width < 768px) {
     grid-template-columns: repeat(1, 1fr);
   }
 `;
